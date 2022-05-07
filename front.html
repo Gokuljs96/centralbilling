@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="front.css" />
+  <script src="front.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="sidenav">
+    <img class="LOGO-IMG" src="leonlogo.png" />
+    <a href="#about">HOME</a>
+    <button class="dropdown-btn">
+      REPORTS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">DAILY REPORTS</a>
+      <a href="#">WEEKLY REPORTS</a>
+      <a href="#">MONTHLY REPORTS</a>
+      <a href="#">YEARLY REPORTS</a>
+    </div>
+    <button class="dropdown-btn">
+      Add expenses
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Voucher</a>
+      <a href="#">Other expenses</a>
+    </div>
+    <button class="dropdown-btn">
+      Add Income
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Donations</a>
+      <a href="#">Advances</a>
+    </div>
+    <button class="dropdown-btn">
+      Employee
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    <button class="dropdown-btn">
+      Privileage
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    <a href="#contact">SETTINGS</a>
+
+    <button id="myBtn" class="dropdown-btn">LOGOUT</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Do you want to logged out.</p>
+        <br />
+        <label class="container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        confirm <br /><br />
+        <p class="modalbtn">Logout</p>
+        <p class="modalbtn">cancel</p>
+      </div>
+    </div>
+    <!--............................................-->
+  </div>
+  <div class="grantsection">
+    <div class="top">
+      <div class="adminbox">
+        <img src="leonlogo.png" />
+        <h4>Admin</h4>
+      </div>
+    </div>
+    <div class="dashboard">
+      <h5>Dashboard</h5>
+      <p id="demo"></p>
+      <p id="MyClockDisplay" onload="showTime()"></p>
+    </div>
+    <div class="saledashboard">
+      <div>
+        <h5>Monthly Expenses</h5>
+        <p>Rs: 34560.00</p>
+        <div class="more-info">more info</div>
+      </div>
+      <div>
+        <h5>Daily expenses</h5>
+        <p>Rs: 14560.00</p>
+        <div class="more-info">more info</div>
+      </div>
+      <div>
+        <h5>2022-23 expenses</h5>
+        <p>Rs: 23360.00</p>
+        <div class="more-info">more info</div>
+      </div>
+      <div>
+        <h5>2022-23 income</h5>
+        <p>Rs: 34560.00</p>
+        <div class="more-info">more info</div>
+      </div>
+    </div>
+    <div class="Transactions">
+      <h4>Recent-Transactions</h4>
+      <div class="wrapper">
+
+
+        <table class="keywords" cellspacing="0" cellpadding="0" style="overflow-y: auto;">
+          <thead>
+            <tr>
+              <th><span>number</span></th>
+              <th><span>Categories</span></th>
+              <th><span>Source</span></th>
+              <th><span>Income</span></th>
+              <th><span>Expense</span></th>
+
+            </tr>
+          </thead>
+          <tbody class="tab-body">
+            <tr class="tab-row">
+              <td class="lalign">silly tshirts</td>
+              <td>6,000</td>
+              <td>110</td>
+              <td>110</td>
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">desktop workspace photos</td>
+              <td>2,200</td>
+              <td>500</td>
+              <td>22%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">arrested development quotes</td>
+              <td>13,500</td>
+              <td>900</td>
+              <td>6.7%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+
+            <tr class="tab-row">
+              <td class="lalign">popular web series</td>
+              <td>8,700</td>
+              <td>350</td>
+              <td>4%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">2013 webapps</td>
+              <td>9,900</td>
+              <td>460</td>
+              <td>4.6%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+            <tr class="tab-row">
+              <td class="lalign">ring bananaphone</td>
+              <td>10,500</td>
+              <td>748</td>
+              <td>7.1%</td>
+
+              <td>22.2 <i id="eyeview" class="fa fa-eye"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagi-nation">
+
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+      <!--expense-->
+      <div class="expense-section">
+        <div class="Transactions">
+          <h4>Expenses</h4>
+          <p class="voucher-head">Voucher</p>
+        </div>
+        <div class="exp-voucher">
+          <div class="sell-heading">
+
+
+
+
+
+            <div class="autocomplete">
+              <form autocomplete="off">
+                <p>Expenses-type</p>
+                <input id="myInput" type="text" name="myCountry" placeholder="type" />
+                <p class="qty">Amount</p>
+                <input type="number" id="quantity" name="quantity" min="1" max="1000" />
+                <br>
+                <br>
+                <br>
+              </form>
+              <div>
+                <form>
+                  <p>Source</p>
+                  <input id="sourceinput" />
+                  <p class="qty">Attach bill</p>
+                  <input type="file" id="myFile" />
+                </form>
+              </div>
+              <div class="ad-btn">
+                <button>Add</button>
+                <button>Clear</button>
+              </div>
+            </div>
+            <div class="ex-addtable">
+              <table class="ex-table">
+                <tr class="ex-tabletr">
+                  <th>Expense type</th>
+                  <th>Source</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+              </table>
+            </div>
+            <div class="ex-granttotal">
+              <h4>GRAND TOTAL<a class="totalcard">Rs-8930.00</a></h4>
+            </div>
+            <div class="ad-btn2">
+              <button>save</button>
+              <button>print</button>
+              <button>print & save</button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="otherexpense">
+          <h4>Other expenses</h4>
+          <div class="otherexpform">
+            <form class="otherexpenseform" autocomplete="off">
+              <p>Expenses-type</p>
+              <input id="otherinput" type="text" name="myCountry" placeholder="type" />
+              <p class="otherqty">Amount</p>
+              <input type="number" id="quan" name="quantity" min="1" max="1000" />
+
+            </form>
+            <div class="oe-addtable">
+              <table class="oe-table">
+                <tr class="oe-tabletr">
+                  <th>Expense type</th>
+                 
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+               
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+               
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                 
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  
+                  <td>67</td>
+                </tr>
+              
+              </table>
+            </div>
+            <div class="oe-granttotal">
+              <h3>GRAND TOTAL<a class="oe-totalcard">Rs-8930.00</a></h3>
+            </div>
+            <div class="oe-adbtn2">
+            
+              <button>Review</button>
+              <button>Submit</button>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+
+      <!--........income..................-->
+
+      <div class="expense-section">
+        <div class="Transactions">
+          <h4>Income</h4>
+
+        </div>
+        <div class="exp-voucher">
+          <div class="sell-heading">
+
+
+
+
+
+            <div class="autocomplete">
+              <form autocomplete="off">
+                <p>Select category</p>
+                <input id="myInput" type="text" name="myCountry" placeholder="type" />
+                <p class="qty">Amount</p>
+                <input type="number" id="quantity" name="quantity" min="1" max="1000" />
+                <br>
+                <br>
+                <br>
+              </form>
+              <div>
+                <form>
+                  <p>Source</p>
+                  <input id="sourceinput" />
+                  <p class="qty">Attach bill</p>
+                  <input type="file" id="myFile" />
+                </form>
+              </div>
+              <div class="ad-btn">
+                <button>Add</button>
+                <button>Clear</button>
+              </div>
+            </div>
+            <div class="ex-addtable">
+              <table class="ex-table">
+                <tr class="ex-tabletr">
+                  <th>Expense type</th>
+                  <th>Source</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+              </table>
+            </div>
+            <div class="ex-granttotal">
+              <h4>GRAND TOTAL<a class="totalcard">Rs-8930.00</a></h4>
+            </div>
+            <div class="ad-btn2">
+              <button>save</button>
+              <button>print</button>
+              <button>print & save</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+
+      //time
+
+      function showTime() {
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 12) {
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+      //date
+      document.getElementById("demo").innerHTML = new Date().toLocaleString(
+        undefined,
+        { year: "numeric", month: "long", day: "2-digit", weekday: "long" }
+      );
+      //.....................................................
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function autocomplete(inp, arr) {
+        /*the autocomplete function takes two arguments,
+        the text field element and an array of possible autocompleted values:*/
+        var currentFocus;
+        /*execute a function when someone writes in the text field:*/
+        inp.addEventListener("input", function (e) {
+          var a,
+            b,
+            i,
+            val = this.value;
+          /*close any already open lists of autocompleted values*/
+          closeAllLists();
+          if (!val) {
+            return false;
+          }
+          currentFocus = -1;
+          /*create a DIV element that will contain the items (values):*/
+          a = document.createElement("DIV");
+          a.setAttribute("id", this.id + "autocomplete-list");
+          a.setAttribute("class", "autocomplete-items");
+          /*append the DIV element as a child of the autocomplete container:*/
+          this.parentNode.appendChild(a);
+          /*for each item in the array...*/
+          for (i = 0; i < arr.length; i++) {
+            /*check if the item starts with the same letters as the text field value:*/
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+              /*create a DIV element for each matching element:*/
+              b = document.createElement("DIV");
+              /*make the matching letters bold:*/
+              b.innerHTML =
+                "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+              b.innerHTML += arr[i].substr(val.length);
+              /*insert a input field that will hold the current array item's value:*/
+              b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+              /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function (e) {
+                /*insert the value for the autocomplete text field:*/
+                inp.value = this.getElementsByTagName("input")[0].value;
+                /*close the list of autocompleted values,
+                    (or any other open lists of autocompleted values:*/
+                closeAllLists();
+              });
+              a.appendChild(b);
+            }
+          }
+        });
+        /*execute a function presses a key on the keyboard:*/
+        inp.addEventListener("keydown", function (e) {
+          var x = document.getElementById(this.id + "autocomplete-list");
+          if (x) x = x.getElementsByTagName("div");
+          if (e.keyCode == 40) {
+            /*If the arrow DOWN key is pressed,
+              increase the currentFocus variable:*/
+            currentFocus++;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 38) {
+            //up
+            /*If the arrow UP key is pressed,
+              decrease the currentFocus variable:*/
+            currentFocus--;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 13) {
+            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+            e.preventDefault();
+            if (currentFocus > -1) {
+              /*and simulate a click on the "active" item:*/
+              if (x) x[currentFocus].click();
+            }
+          }
+        });
+        function addActive(x) {
+          /*a function to classify an item as "active":*/
+          if (!x) return false;
+          /*start by removing the "active" class on all items:*/
+          removeActive(x);
+          if (currentFocus >= x.length) currentFocus = 0;
+          if (currentFocus < 0) currentFocus = x.length - 1;
+          /*add class "autocomplete-active":*/
+          x[currentFocus].classList.add("autocomplete-active");
+        }
+        function removeActive(x) {
+          /*a function to remove the "active" class from all autocomplete items:*/
+          for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("autocomplete-active");
+          }
+        }
+        function closeAllLists(elmnt) {
+          /*close all autocomplete lists in the document,
+          except the one passed as an argument:*/
+          var x = document.getElementsByClassName("autocomplete-items");
+          for (var i = 0; i < x.length; i++) {
+            if (elmnt != x[i] && elmnt != inp) {
+              x[i].parentNode.removeChild(x[i]);
+            }
+          }
+        }
+        /*execute a function when someone clicks in the document:*/
+        document.addEventListener("click", function (e) {
+          closeAllLists(e.target);
+        });
+      }
+
+      /*An array containing all the country names in the world:*/
+      var countries = [
+        "Hykon Solar Water Heater",
+        "Off Grid Solar System",
+        "On Grid Solar System",
+        "Solar Garden Lights",
+        "Solar Outdoor Lamps",
+        "Solar Water Pump",
+        "Solar Surface Water Pump",
+        "Solar Submersible Water Pump",
+        "Solar Water Heater",
+        "FPC Solar Water Heater",
+        "ETC Solar Water Heater",
+        "1 Ton Solar AC",
+        "1.5 Ton Solar AC",
+        "Solar Panel",
+        "Solar Inverter",
+        "Solar Battery",
+      ];
+
+      /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+      autocomplete(document.getElementById("myInput"), countries);
+    </script>
+</body>
+
+</html>
